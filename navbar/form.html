@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{
+			background-color: white;
+		}
+		.box{
+			width: 600px;
+			height: 750px;
+					border-top-left-radius: 30px;
+			border-bottom-right-radius: 30px;
+			box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.33), 0px 8px 4px;
+			margin-left: auto;
+			background-color: whitesmoke;
+			margin-right: auto;
+			box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.33), 2px 5px 10px rgba(0, 0, 0, 0.5);
+			margin-bottom: 30px;
+		}
+		label{
+			margin-left: 20px;
+			display: inline-block;
+			width: 150px;
+			padding: 5px;
+			text-transform: capitalize;
+		}
+		.content{
+			padding-top: 40px;
+			margin-top: 50px;
+		}
+		.required{
+			width: 220px;
+			height: 30px;
+		}
+		input{
+			border-right: none;
+			border-left: none;
+			border-top: none;
+			border-bottom-color: #ff7200;
+			background-color: whitesmoke;
+		}
+		input:focus{
+			outline: none;
+		}
+		.btn{
+			width: 220px;
+			height: 30px;
+			letter-spacing: 2px;
+			font-size: 20px;
+			border-radius: 20px;
+			border-style: none;
+			background: linear-gradient(to right,#ff7200,orange,red);
+			color: white;
+			margin-top: 30px;
+		margin-left: 180px;
+		}
+		textarea{
+		bottom: 60px;
+		}
+	</style>
+</head>
+<body>
+  <div class="box">
+  	<div class="content">
+  	<label>first name:</label>
+  	<input type="text" name="name" required> (maximum 50 characters allowed)<br><br>
+  	<label>last name:</label>
+  	<input type="text" name="name" required> (maximum 50 characters allowed)<br><br>
+  	<label>email id:</label>
+  	<input type="text" name="name" placeholder="@gmail.com" required> (maximum 50 characters allowed)<br><br>
+  	<label>mobile number:</label>
+  	<input type="text" name="name" placeholder="07xxxxxxxxxx" required> (10 digits allowed)<br><br>
+  	<label>gender</label>
+  	<input type="radio" name="gender" value="male">Male
+  	<input type="radio" name="gender" value="female">Female<br><br>
+  	<label>upload your photo here</label>
+  	<input type="file" name="photo" required><br><br>
+  	<label>date of birth(DOB)</label>
+  	<input type="date" name="dob"><br><br>
+  	<label class="ad">address</label>
+  	<textarea rows="5" style="width: 300px;"></textarea>
+  	<label>city</label>
+  	<input type="tex" name="city">(maximum 50 characters allowed)<br><br>
+  	<label>state</label>
+  	<input type="text" name="state">(maximum 50 characters allowed)<br><br>
+  	<label>pin code</label>
+  	<input type="text" name="pin code">(maximum 50 characters allowed)<br><br>
+  	<label>country</label>
+  	<input type="text" name="country">(maximum 50 characters allowed)<br><br>
+  	<label>hobbies</label>
+  	<input type="checkbox" name="hobbies" value="Drawing">Drawing
+  	<input type="checkbox" name="hobbies" value="singing">Singing
+  	<input type="checkbox" name="hobbies" value="dancing">Dancing
+  	<input type="checkbox" name="hobbies" value="sketching">Sketching
+  	</div>
+  	<button type="submit" class="btn">SUBMIT</button>
+  </div>
+</body>
+</html>
